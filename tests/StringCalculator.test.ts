@@ -31,3 +31,9 @@ test("throws an exception for negative numbers", () => {
     "negative numbers not allowed -2"
   );
 });
+
+test("throws an exception for multiple negative numbers", () => {
+  expect(() => StringCalculator.add("1,-2,-3,4")).toThrow(
+    "negative numbers not allowed -2,-3"
+  );
+});
