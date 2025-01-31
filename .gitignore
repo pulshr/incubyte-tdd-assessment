@@ -1,0 +1,19 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# TypeScript build files
+dist/
+*.tsbuildinfo
+
+# Jest cache and test coverage reports
+coverage/
+jest-cache/
+jest-config/
+
+# Logs and system files
+logs/
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
