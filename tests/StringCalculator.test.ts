@@ -21,3 +21,7 @@ test("returns sum for multiple numbers", () => {
 test("handles new line as a delimiter", () => {
   expect(StringCalculator.add("1\n2,3")).toBe(6);
 });
+
+test("handles custom delimiter", () => {
+  expect(StringCalculator.add("//;\n1;2")).toBe(3);
+});
