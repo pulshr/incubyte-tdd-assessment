@@ -17,3 +17,7 @@ test("returns the sum of two numbers", () => {
 test("returns sum for multiple numbers", () => {
   expect(StringCalculator.add("1,2,3,4")).toBe(10);
 });
+
+test("handles new line as a delimiter", () => {
+  expect(StringCalculator.add("1\n2,3")).toBe(6);
+});
