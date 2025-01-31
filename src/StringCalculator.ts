@@ -1,5 +1,6 @@
 export class StringCalculator {
   static add(numbers: string): number {
-    return 0; // Hardcoded return to pass the first test
+    if (!numbers) return 0;
+    return parseInt(numbers); // Convert string to number
   }
 }
