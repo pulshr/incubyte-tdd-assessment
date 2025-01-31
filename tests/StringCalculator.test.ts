@@ -25,3 +25,9 @@ test("handles new line as a delimiter", () => {
 test("handles custom delimiter", () => {
   expect(StringCalculator.add("//;\n1;2")).toBe(3);
 });
+
+test("throws an exception for negative numbers", () => {
+  expect(() => StringCalculator.add("1,-2,3")).toThrow(
+    "negative numbers not allowed -2"
+  );
+});
